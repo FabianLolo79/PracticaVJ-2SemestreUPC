@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &219902724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,10 +231,11 @@ GameObject:
   m_Component:
   - component: {fileID: 642629516}
   - component: {fileID: 642629515}
-  - component: {fileID: 642629518}
   - component: {fileID: 642629517}
   - component: {fileID: 642629519}
   - component: {fileID: 642629520}
+  - component: {fileID: 642629522}
+  - component: {fileID: 642629521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -286,8 +287,8 @@ SpriteRenderer:
   m_SortingLayerID: -1449903587
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.9150943, g: 0.5654245, b: 0.28057137, a: 1}
+  m_Sprite: {fileID: -6628600609373984118, guid: 0c9c15f225bfc4347af883307c2b7668, type: 3}
+  m_Color: {r: 0.9433962, g: 0.9261767, b: 0.91224635, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -339,43 +340,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &642629518
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642629514}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!114 &642629519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +383,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 4
+--- !u!61 &642629521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642629514}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.055113792, y: -0.663131}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 4.21875}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5137954, y: 2.7726178}
+  m_EdgeRadius: 0
+--- !u!95 &642629522
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642629514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e2b8f94030d294d85534336ab06491, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &776457655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,7 +1944,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 10.5830555
+      m_AnimationSpeed: 8.102681
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 3, y: 3, z: 0}
@@ -1923,7 +1955,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 14.549476
+      m_AnimationSpeed: 9.4429245
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: 8, z: 0}
@@ -1934,7 +1966,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 8.333435
+      m_AnimationSpeed: 11.168503
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -8, y: 9, z: 0}
@@ -1945,7 +1977,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 10.986008
+      m_AnimationSpeed: 11.25794
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -8, y: 12, z: 0}
@@ -1956,7 +1988,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 9.187975
+      m_AnimationSpeed: 11.065765
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: 12, z: 0}
@@ -1967,7 +1999,7 @@ Tilemap:
       - {fileID: 21300000, guid: c650ac843559c44478d89d670098a92e, type: 3}
       - {fileID: 21300000, guid: 56c8f6cab80e8a94eb068376d9826aee, type: 3}
       - {fileID: 21300000, guid: 29dc4ba2edef03c49bbccce0f8a4e42b, type: 3}
-      m_AnimationSpeed: 11.67323
+      m_AnimationSpeed: 12.6659
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
