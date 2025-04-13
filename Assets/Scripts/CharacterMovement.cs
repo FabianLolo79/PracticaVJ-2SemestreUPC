@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))] [RequireComponent(typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
 
@@ -8,8 +9,8 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 _moveInput;
     private Animator _playerAnimator;
 
-    
-    
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,5 +34,5 @@ public class CharacterMovement : MonoBehaviour
     {
         _playerRb.MovePosition(_playerRb.position + _moveInput * _moveSpeed * Time.fixedDeltaTime);
     }
-       
+
 }
